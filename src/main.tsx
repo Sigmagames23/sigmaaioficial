@@ -2,7 +2,6 @@ import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import App from './App.tsx';
 import './index.css';
-import CopyrightProtection from './lib/copyright';
 
 // Verificar que el elemento root existe
 const rootElement = document.getElementById('root');
@@ -34,20 +33,13 @@ if (!rootElement) {
         ">
           Reintentar
         </button>
-        <div style="margin-top: 20px; font-size: 12px; opacity: 0.7;">
-          © 2025 Sigma AI. Todos los derechos reservados.
-        </div>
       </div>
     </div>
   `;
 } else {
   console.log('✅ [MAIN] Inicializando aplicación React...');
-  console.log('🔒 [COPYRIGHT] Activando protección de derechos de autor...');
   
   try {
-    // Inicializar protección de copyright
-    CopyrightProtection.injectWatermarks();
-    
     const root = createRoot(rootElement);
     root.render(
       <StrictMode>
@@ -56,7 +48,6 @@ if (!rootElement) {
     );
     
     console.log('✅ [MAIN] Aplicación React inicializada correctamente');
-    console.log('🛡️ [COPYRIGHT] Protección activada:', CopyrightProtection.getCopyrightInfo());
   } catch (error) {
     console.error('❌ [MAIN] Error inicializando React:', error);
     rootElement.innerHTML = `
@@ -84,9 +75,6 @@ if (!rootElement) {
           ">
             Reintentar
           </button>
-          <div style="margin-top: 20px; font-size: 12px; opacity: 0.7;">
-            © 2025 Sigma AI. Todos los derechos reservados.
-          </div>
         </div>
       </div>
     `;
