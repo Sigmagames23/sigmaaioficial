@@ -1,0 +1,72 @@
+{
+  "name": "Sigma AI - Asistente de Inteligencia Artificial",
+  "short_name": "Sigma AI",
+  "description": "Tu asistente personal de IA avanzado con generación de imágenes, análisis de archivos y conversaciones inteligentes sin límites",
+  "start_url": "https://sigmaai.ct.ws/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#7c3aed",
+  "orientation": "portrait-primary",
+  "scope": "https://sigmaai.ct.ws/",
+  "lang": "es",
+  "categories": ["productivity", "utilities", "education"],
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icon-apple-touch.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Nuevo Chat",
+      "short_name": "Chat",
+      "description": "Iniciar nueva conversación con Sigma AI",
+      "url": "/?action=new-chat",
+      "icons": [
+        {
+          "src": "/icon-chat.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Generar Imagen",
+      "short_name": "Imagen",
+      "description": "Crear imagen con IA",
+      "url": "/?action=generate-image",
+      "icons": [
+        {
+          "src": "/icon-image.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshot-wide.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/screenshot-narrow.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Meta Tags -->
+    <title>Sigma AI - Asistente de Inteligencia Artificial Avanzado</title>
+    <meta name="description" content="Sigma AI es tu asistente personal de inteligencia artificial con capacidades avanzadas de generación de imágenes, análisis de archivos, conversaciones inteligentes y procesamiento de audio. Motor de IA completamente independiente.">
+    <meta name="keywords" content="inteligencia artificial, AI, asistente virtual, generación de imágenes, análisis de archivos, chat inteligente, Sigma AI">
+    <meta name="author" content="Sigma AI Team">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://sigmaai.ct.ws">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sigmaai.ct.ws">
+    <meta property="og:title" content="Sigma AI - Asistente de Inteligencia Artificial Avanzado">
+    <meta property="og:description" content="Tu asistente personal de IA con generación de imágenes, análisis inteligente de archivos y conversaciones naturales.">
+    <meta property="og:image" content="https://sigmaai.ct.ws/og-image.jpg">
+    <meta property="og:site_name" content="Sigma AI">
+    <meta property="og:locale" content="es_ES">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sigmaai.ct.ws">
+    <meta property="twitter:title" content="Sigma AI - Asistente de Inteligencia Artificial Avanzado">
+    <meta property="twitter:description" content="Tu asistente personal de IA con generación de imágenes, análisis inteligente de archivos y conversaciones naturales.">
+    <meta property="twitter:image" content="https://sigmaai.ct.ws/twitter-image.jpg">
+    <meta property="twitter:creator" content="@SigmaAI">
+    
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#7c3aed">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Sigma AI">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.json">
+    
+    <!-- Performance & Security -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-TileColor" content="#7c3aed">
+    <meta name="msapplication-config" content="/browserconfig.xml">
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://js.puter.com">
+    <link rel="preconnect" href="https://api.puter.com">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Puter AI SDK -->
+    <script src="https://js.puter.com/v2/"></script>
+    
+    <!-- PDF.js for file processing -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Sigma AI",
+      "description": "Asistente de inteligencia artificial avanzado con generación de imágenes, análisis de archivos y conversaciones inteligentes",
+      "url": "https://sigmaai.ct.ws",
+      "applicationCategory": "ProductivityApplication",
+      "operatingSystem": "Web Browser",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "creator": {
+        "@type": "Organization",
+        "name": "Sigma AI Team"
+      },
+      "featureList": [
+        "Generación de imágenes con IA",
+        "Análisis inteligente de archivos",
+        "Conversaciones naturales",
+        "Procesamiento de audio",
+        "Motor de IA independiente"
+      ]
+    }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- Service Worker Registration -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then((registration) => {
+              console.log('SW registered: ', registration);
+            })
+            .catch((registrationError) => {
+              console.log('SW registration failed: ', registrationError);
+            });
+        });
+      }
+    </script>
+  </body>
+</html>
